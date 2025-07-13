@@ -16,4 +16,4 @@ def chat_completion(content: str) -> str:
 
 # print(chat_completion("넌 누구야?"))
 
-# print(chat_completion("대한민국의 현재 대통령"))
+print(chat_completion("대한민국의 21대 대통령 이름?"))

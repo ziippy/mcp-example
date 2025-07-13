@@ -14,3 +14,8 @@ def process_mcp(request: MCPRequest):
     final_answer = chat_completion(f"다음 검색 결과를 참고해서 사용자 질문에 답변해줘:\n\n{context}")
 
     return MCPResponse(context=context, final_answer=final_answer)
+
+# 로컬 테스트용 실행 코드
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
